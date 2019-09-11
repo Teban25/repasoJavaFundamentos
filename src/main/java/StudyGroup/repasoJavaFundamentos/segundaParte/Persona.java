@@ -2,7 +2,7 @@ package StudyGroup.repasoJavaFundamentos.segundaParte;
 
 /**
  * Explicaion de la palabra reservada
- * static, this, null, encapsulamiento
+ * static, this, null, encapsulamiento.
  * 
  * this sirve para acceder a las variables y
  * metodos globales, sin embargo, no es posible usarla
@@ -14,7 +14,7 @@ package StudyGroup.repasoJavaFundamentos.segundaParte;
  * 
  * null se le asigna solamente a tipos de Objectos y no
  * a variables primitivas (pues sacaria error de compilacion),
- * y basicamente define que se elimina la refencia a la memoria Heap
+ * y basicamente define que se elimina la refencia a la memoria Heap.
  * 
  * El encapsulamiento define que las buenas practicas son no acceder
  * directamente a los atributos de la clase, sino mediante sus gets and sets.
@@ -28,9 +28,11 @@ public class Persona {
 		contador = 15;
 	}
 	
+	/**
 	{
 		contador++;
 	}
+	*/
 
 	private String nombre;
 	//private int ejemplo = null; esto seria error
@@ -40,8 +42,6 @@ public class Persona {
 	
 	public Persona(int edad) {
 		this.edad = sumarEdad(edad);
-		Persona.contador = 10;
-		Persona.restarEdad();
 	}
 
 	public String getNombre() {
@@ -63,10 +63,6 @@ public class Persona {
 	public int sumarEdad(int edad) {
 		return edad + 15;
 	}
-	
-	public static int restarEdad() {
-		return contador++;
-	}
 
 	public String getApellido() {
 		return apellido;
@@ -74,6 +70,10 @@ public class Persona {
 
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
+	}
+
+	public static int getContador() {
+		return contador;
 	}
 
 	@Override

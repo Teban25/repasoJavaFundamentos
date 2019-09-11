@@ -22,7 +22,7 @@ public class ObjetoSuma {
 		return nombre;
 	}
 
-	public void setNombre(String nombre) {
+	public void setNombre(final String nombre) {
 		this.nombre = nombre;
 	}
 	
