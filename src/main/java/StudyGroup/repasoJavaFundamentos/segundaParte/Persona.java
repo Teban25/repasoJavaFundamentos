@@ -23,16 +23,24 @@ package StudyGroup.repasoJavaFundamentos.segundaParte;
  * @author davidesteban.gomez
  */
 public class Persona {
-		
+	
+	/**
+	 * Se usa mucho para cargar variables del sistema,
+	 * directorio de fuentes,
+	 * y en general contextos estaticos (que solo se ejecutan una sola vez).
+	 */
 	static {
 		contador = 15;
 	}
 	
+
 	/**
+	 * Pre constructor.
+	 * new Persona();
+	 */
 	{
 		contador++;
 	}
-	*/
 
 	private String nombre;
 	//private int ejemplo = null; esto seria error

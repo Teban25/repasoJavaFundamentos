@@ -1,5 +1,14 @@
 package StudyGroup.repasoJavaFundamentos;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
 import StudyGroup.repasoJavaFundamentos.primeraParte.ObjetoSuma;
 import StudyGroup.repasoJavaFundamentos.primeraParte.PasoPorReferenciaValor;
 import StudyGroup.repasoJavaFundamentos.segundaParte.Paises;
@@ -63,6 +72,38 @@ public class App {
 		System.out.println(Paises.COLOMBIA);
 		System.out.println(Paises.PUERTO_RICO.segundCiudad());
 		System.out.println(Paises.COLOMBIA.segundCiudad());
+		
+		// Explicacion y uso con expecion para MAP del forEach
+		Set<Integer> ids = new HashSet<>();
+		ids.add(1);
+		ids.add(2);
+		
+		List<Integer> ids2 = Arrays.asList(1,2,3,4,5,6);
+		Map<Integer, Integer> ids3 = new HashMap<>();
+		ids3.put(1, 1);
+		ids3.put(2, 2);
+		
+		for (Integer id : ids2) {
+			System.out.println("Probando forEach con List: " + id);
+		}
+		
+		for (Integer id : ids) {
+			System.out.println("Probando forEach con Set: " + id);
+		}
+		
+		for (Entry<Integer, Integer> id : ids3.entrySet()) {
+			System.out.println("Probando forEach especial para Map"
+					+ id.getKey() + ":" + id.getValue());
+		}
+		
+		//Concepto de Autoboxing y unboxing
+		Integer boxing1 = 10;
+		int atomico2 = 25;
+		int atomico1 = boxing1;
+		boxing1 = atomico2;
+		
+		double poFactorCast = Double.parseDouble("dada2.5"); //form 2 
+
 		/*****TERCERA PÁRTE**/
 	}
 	
