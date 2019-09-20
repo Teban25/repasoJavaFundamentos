@@ -1,12 +1,18 @@
 package StudyGroup.repasoJavaFundamentos.segundaParte;
 
+import java.io.Serializable;
+
 /**
  * 
  * @author davidesteban.gomez
  *
  */
-public class Alumno extends Persona{
+public class Alumno extends Persona implements Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3601559827787546218L;
 	private double definitiva = 2.95;
 	
 	/**
